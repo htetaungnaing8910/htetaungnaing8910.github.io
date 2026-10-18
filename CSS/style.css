@@ -1,0 +1,23 @@
+h1{
+    /* color: red; */
+    /* 0 to 9 , a to f */
+    /* rgb */
+    /* Hex Code */
+    /* color: #ff00000 */
+
+    /* Short Hex Code */
+    /* color: #f00 */
+
+    /* rgb */
+    /* 0 to 255 */
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    background-color: rgb(0, 255, 0);
+    width: 50%;
+}
