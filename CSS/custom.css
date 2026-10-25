@@ -8,7 +8,7 @@
 
 /* tag selctor/element selector */
 h1{
-    color: green;
+    color: red;
 }
 
 /* attribute selector */
@@ -29,7 +29,7 @@ a[title="google"]{color: blue;
 /* Class Selector */
 
 .classselector{
-    color: green;
+    color: brown;
     text-transform: capitalize;
     font-size: 24px;
 }
@@ -123,3 +123,126 @@ input[type="checkbox"]:disabled + label{
 #fName:read-only {
      background-color: green;color:
       white;}
+
+
+      /* empty */
+
+      div:empty{
+        height: 20px;
+        background-color: red;
+      }
+
+      ul li:last-child{
+        background-color: red;
+      }
+
+      ul li:first-child{
+        background-color: green;
+      }
+
+      ul li:nth-child(4){
+        background-color: yellow;
+      }
+
+      /* margin */
+
+      #marginOne{
+        border: 1px solid black;
+        /* margin: 50px; */
+        /* T/R/B/L */
+        /* margin: 40px 0; */
+        /* T&B/ L&R */
+        /* margin: 40px 100px 0; */
+        /* T/L&R/B */
+        margin: 100px 50px 0 10px;
+        /* T/R/B/L */
+      }
+
+      #marginTwo{
+        margin-bottom: 100px;
+      }
+
+      /* padding */
+      .paddingOne {
+        border: 1px solid red;
+        /* padding: 50px 10px 100px 20px; */
+        padding-top: 100px;
+      }
+
+      /* Border */
+      .borderOne{
+        /* border: 50px solid green; */
+        border-left: 30px solid red;
+      }
+
+      .borderTwo{
+        border-style: dashed dotted solid double;
+        border-color: brown red;
+        border-width: 20px 10px;
+      }
+
+
+      /* Layout */
+
+    .block{
+        border: 1px solid red;
+        width: 400px;
+        height: 40px;
+        display: inline-block;
+    }
+
+    .inline{
+        border: 1px solid black;
+        width: 400px;
+        display: inline-block;
+        height: 40px;
+    }
+
+
+    /* float */
+
+    .float_right{
+        width: 40%;
+        float: right;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+    .float_left{
+        width: 40%;
+        float: left;
+    }
+
+
+    /* grid */
+    .gridOne div{
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .gridOne{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* grid-column-gap: 40px; */
+        /* grid-row-gap: 50px; */
+        grid-gap: 30px;
+    }
+    .gridtwo .gridthree {
+      display: grid;
+      grid-template-columns: auto auto auto 
+    }
+    .gridtwo div, .gridthree div {
+        padding 20px;
+        text-align: center;
+        color:white
+    }
+    .columnadd{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .rowadd {grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+    }
